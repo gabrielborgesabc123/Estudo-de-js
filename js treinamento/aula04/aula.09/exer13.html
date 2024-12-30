@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>st-web</title>
+</head>
+<body>
+    <h1>sistema de país</h1>
+
+<strong> DIGITE Seu país de origem:</strong><input type="text" name="txtpais" id="pais">
+<br>
+<input type="button" value="verificar" onclick ="verificar()">
+    <div class="res" >
+    </div>
+
+        <script>
+            function verificar(){
+             var nacionalidade  = window.document.getElementById('pais').value
+             var res = window.document.querySelector('div.res')
+             var ver = (nacionalidade.value)
+             res.innerHTML=`voce é ${ver}`
+             if (nacionalidade== "brasil"){
+              res.innerHTML = `voce é brasileiro`
+
+             }else{
+             res.innerHTML = `voce é estrangeiro`
+             }
+            }
+
+        </script>
+</body>
+
+</html>

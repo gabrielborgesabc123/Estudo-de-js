@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+        background: rgb(241, 237, 3);
+     }
+    </style>
+</head>
+
+<body>
+    
+    <h1>ola,mundo</h1>
+    <p>esse é o meu primeiro <strong>DOM</strong> em javascript</p>
+    <br>
+    <p>beleza</p>
+<div id ="gb">clique aqui </div>
+    <script>
+        let corpo =window.document.body
+        let p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write("estou aprendendo:"+p1.innerText)
+        let gb = window.document.getElementById("gb")
+       gb.style.background = "green"
+        gb.innerText = "estou aguardadndo..."
+    </script>
+    
+</body>
+
+</html>
